@@ -1,0 +1,282 @@
+/** Custom Fonts **/
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/lato/lato-regular.woff') format('woff'),
+         url('fonts/lato/lato-regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/lato/lato-bold.woff') format('woff'),
+         url('fonts/lato/lato-bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/source_code_pro/SourceCodePro-Medium.otf') format('otf'),
+         url('fonts/source_code_pro/SourceCodePro-Medium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Source Code Pro Bold';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/source_code_pro/SourceCodePro-Bold.otf') format('otf'),
+         url('fonts/source_code_pro/SourceCodePro-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Source Code Pro Light';
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/source_code_pro/SourceCodePro-Light.otf') format('otf'),
+         url('fonts/source_code_pro/SourceCodePro-Light.otf') format('opentype');
+}
+
+
+/** The Basics **/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-family: "Lato Bold", sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+a {text-decoration: none;}
+
+.row {clear: both;}
+.half {width: 50%;}
+.left {float: left;}
+.right {float: right;}
+
+.circleIcon {
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2em;
+    padding: 95px 60px 25px;
+    border-radius: 200px;
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+}
+
+.circleIcon:hover {background: #F4D141;}
+
+.circleIcon img {margin-top: -20px;}
+
+
+/** Title Page **/
+
+.titlePage {
+    text-align: center;
+}
+
+.App-header {
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
+}
+
+.App-title img {
+    width: 100%;
+    max-width: 800px;
+}
+
+.App-intro {
+    font-size: 1.45em;
+    font-family: "Lato Bold", "Verdana", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 2em;
+}
+
+.button {
+    background-color: #F4D141; /* Gold */
+    border: none;
+    color: white;
+    font-family: "Lato Bold", "Verdana", sans-serif;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    font-size: 16px;
+}
+
+.Link{
+    color: #F4D141; /* Gold */
+    font-family: "Lato Bold", "Verdana", sans-serif;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: underline;
+    display: inline-block;
+    font-size: 20px;
+}
+
+a.link {
+
+    color: #fcb614;
+    font-family: "Source Code Pro Bold", sans-serif;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: underline;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/** Inner Pages **/
+
+.App-title.int img {
+    width: 15vw;
+    margin: 2em 0 0 3em;
+}
+
+.App-intro.int {
+    max-width: 650px;
+}
+
+.comingSoonText {
+    text-align: center;
+}
+
+form.signUp {
+    margin: auto;
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+}
+
+form.signUp .button {
+    margin: auto;
+    display: block;
+    clear: both;
+}
+
+form .formField {
+    overflow: hidden;
+}
+
+label {
+    font-size: 2em;
+    font-family: "Lato", "Verdana", sans-serif;
+    font-weight: 700;
+    width: 39%;
+    text-align: right;
+    float: left;
+    margin: .3em 0 .9em;
+}
+
+input {
+    font-size: 1.8em;
+    width: 54.5%;
+    padding: .2em .35em;
+    border: 5px solid black;
+    float: right;
+    margin-bottom: 1em;
+}
+
+.card {
+    max-width: 350px;
+    text-align: center;
+}
+
+.left .card {float: right;margin-right: 20px;}
+.right .card {float: left;margin-left: 20px;}
+
+
+/** Footer **/
+
+footer {
+    margin: 1em 0;
+    text-align: center;
+}
+
+footer small {
+    font-size:16px;
+    font-family: "Source Code Pro Light", monospace;
+    text-align: center;
+}
+
+.social{
+    padding: 20px;
+    align-items: center;
+
+}
+
+
+/** Animations **/
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/** Media Queries **/
+
+@media only screen and (max-width: 800px) {
+
+    h1 {font-size: 2em;}
+
+    .App-title.int img {width: 25vw;}
+
+    label {
+        font-size: 1.5em;
+        width: 38%;
+    }
+
+    input {
+        font-size: 1.2em;
+        width: 52%;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .half {width: 100%;}
+
+    .card {max-width: 100%;}
+
+    .right .card, .left .card {margin: 0;}
+
+    .left, .right, .card {float: none !important;}
+
+    h1 {font-size: 1.5em;}
+
+    .App-title.int img {width: 35vw;}
+
+    label, input {
+        width: 90%;
+        margin: auto;
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    input {margin-bottom: 1em;}
+
+}

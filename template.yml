@@ -9,11 +9,11 @@ Parameters:
     Description: AWS CodeStar projectID used to associate new resources to team members
 
 Resources:
-  GetHelloWorld:
+  SurveyFrontEnd:
     Type: AWS::Serverless::Function
     Properties:
       Handler: index.get
-      Runtime: nodejs4.3
+      Runtime: nodejs6.10.0
       Role:
         Fn::ImportValue:
           !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
