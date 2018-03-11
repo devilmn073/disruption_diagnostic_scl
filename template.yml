@@ -13,7 +13,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       Handler: index.get
-      Runtime: nodejs6.10.0
+      Runtime: nodejs6.10
       CodeUri: s3://aws-codestar-us-east-1-425957751615-disruption-diag-pipe/disruption-diag-Pipe/code.zip
       Role:
         Fn::ImportValue:
