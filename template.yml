@@ -14,7 +14,11 @@ Resources:
     Properties:
       Handler: index.get
       Runtime: nodejs6.10
-      CodeUri: s3://aws-codestar-us-east-1-425957751615-disruption-diag-pipe/disruption-diag-Pipe/code.zip
+      CodeUri: #s3://aws-codestar-us-east-1-425957751615-disruption-diag-pipe/disruption-diag-Pipe/code.zip
+        # !Ref function allows you to fetch value 
+        # of parameters and other resources at runtime
+        Bucket: !Ref BucketName
+        Key: !Ref CodeKey
       Role:
         Fn::ImportValue:
           !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
