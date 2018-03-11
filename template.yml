@@ -14,6 +14,7 @@ Resources:
     Properties:
       Handler: index.get
       Runtime: nodejs6.10.0
+      CodeUri: s3://aws-codestar-us-east-1-425957751615-disruption-diag-pipe/disruption-diag-Pipe/code.zip
       Role:
         Fn::ImportValue:
           !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
